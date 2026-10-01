@@ -1,1 +1,83 @@
+* { /* This is the universal reset. I like to put it at the beginning of my css file so I never forget it!*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+    background-color:black;
+    color: aliceblue;
+}
+
+main {
+    background-color: rgb(20, 20, 128);
+}
+/*HEADER*/
+.navBar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+/*HERO*/
+.bioHero {
+    flex-basis: 100%;
+    background-color: blue;
+}
+
+/*CARDS*/
+.cardGrid {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+.card {
+    flex-basis: 100%;
+    padding:30px;
+    background-color: blue;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.card:hover {
+    background-color: lightblue;
+    box-shadow: 5px 5px white;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/*SCREEN FORMATTING*/
+@media (width >=768px) {
+    .navBar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .navLinks {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cardGrid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
